@@ -73,3 +73,75 @@ h1, h2, h3, h4, h5, h5{
   }
 
 /* banner section css end */
+
+/* menu item start  */
+.menu_item_container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+
+.about_us, .curriculumn, .teachers_info{
+  position: relative;
+  transition: all ease-in .5s;
+  cursor: pointer;
+  /* color: white; */
+  font-size: 16px;
+  padding: 10px;
+}
+
+.about_us:hover{
+  background-color: salmon;
+  color: #fff;
+}
+.curriculumn:hover{
+  background-color: #C40A2A;
+  color: #fff;
+}
+.teachers_info:hover{
+  background-color: #3a0a12;
+  color: #fff;
+}
+
+.about_us_dropdwn,
+.curriculumn_dropdwn, 
+.teachers_info_dropdwn{
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  opacity: 0;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  width: 150px;
+  border-top: 7px solid salmon;
+
+}
+
+.about_us_dropdwn h3, 
+.curriculumn_dropdwn h3,
+.teachers_info_dropdwn h3
+{
+  font-size: 14px;
+  border-bottom: 2px solid #f1f1f1;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #000;
+}
+
+.about_us:hover .about_us_dropdwn, 
+.curriculumn:hover .curriculumn_dropdwn,
+.teachers_info:hover .teachers_info_dropdwn
+{
+  opacity: 1;
+  top: 45px;
+  transition: all ease-in .5s;
+}
+
+.about_us_dropdwn h3:hover{
+  background-color: #f1f1f1;
+  padding:0 5px;
+  transition: all ease-in .5s;
+}
+/* menu item end */
